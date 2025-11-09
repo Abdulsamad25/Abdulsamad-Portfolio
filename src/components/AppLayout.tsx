@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { Loader } from './portfolio/Loader';
 import { Navigation } from './portfolio/Navigation';
 import { Hero } from './portfolio/Hero';
 import { About } from './portfolio/About';
@@ -11,8 +12,22 @@ import { Contact } from './portfolio/Contact';
 import { Footer } from './portfolio/Footer';
 
 const AppLayout: React.FC = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return <Loader />;
+  }
+
   return (
-    <div className="min-h-screen bg-white">
+    <div className="bg-white min-h-screen">
       <Navigation />
       <Hero />
       <About />
