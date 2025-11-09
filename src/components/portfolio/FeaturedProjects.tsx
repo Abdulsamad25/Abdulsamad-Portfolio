@@ -18,12 +18,12 @@ const projects = [
   },
   {
     title: 'YourChildEducation',
-    description: 'Collaborative project management tool with real-time updates',
+    description: 'A collaborative project between myself and a backend developer that brings schools and teachers together. It offers teachers a platform to apply for jobs while schools can post vacancies and manage applications seamlessly.',
     image: 'https://res.cloudinary.com/dvd7wbty8/image/upload/v1762633960/yourchildeducation_iuvg3m.png',
-    tech: ['Next.js', 'TypeScript', 'Supabase', 'Tailwind'],
+    tech: ['React', 'Taiwlwind', 'Swagger Docs', 'Vercel', 'Axios', 'Fetch API'],
     metrics: { teams: '500+', tasks: '50K+', satisfaction: '4.8/5' },
-    challenge: 'Real-time collaboration across multiple users',
-    solution: 'Leveraged WebSockets and optimistic UI updates',
+    challenge: 'Integrating the backend api with the frontend',
+    solution: 'Worked closely with the backend developer to ensure smooth API integration and data flow',
     github: '#',
     live: 'https://www.yourchildeducation.com/'
   },
