@@ -4,7 +4,7 @@ import { useRef, useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
 
 const testimonials = [
-  { name: 'Sholanke Taiwo', role: 'Front-end Developer', text: '', company: 'Habeb.Js', image: 'https://res.cloudinary.com/dvd7wbty8/image/upload/v1762714662/codingTime_avzmjn.png' },
+  { name: 'Sholanke Taiwo', role: 'Front-end Developer', text: 'Yahaya delivered exceptional work on our platform. His attention to detail and technical expertise exceeded our expectations.', company: 'Habeb.Js', image: 'https://res.cloudinary.com/dvd7wbty8/image/upload/v1762714662/codingTime_avzmjn.png' },
   { name: 'Akinpelu Olamilekan', role: 'Shopify Website Developer', text: 'Collaborating with Yahaya was seamless from start to finish. He quickly grasped our goals and delivered results that exceeded expectations. His creativity and technical skill made everything smoother. Yahaya truly made our life easier at EMW3.', company: 'EMW3', image: 'https://res.cloudinary.com/dvd7wbty8/image/upload/v1762714460/photo_2025-11-09_19-51-51_qbfybj.jpg' },
   { name: 'Olumayowa Feyisayo', role: 'Front-end Developer', text: 'One of the best developers I\'ve worked with. Fast, reliable, and always delivers high-quality results.', company: 'YourChildEducation', image: 'https://res.cloudinary.com/dvd7wbty8/image/upload/v1762714460/photo_2025-11-09_19-51-50_gyxmr0.jpg' },
 ];
