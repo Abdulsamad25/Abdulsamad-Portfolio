@@ -2,7 +2,6 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
 import { ExternalLink, Github, X } from 'lucide-react';
-// import ForeverImg from "../../assets/image/forever-img.png"
 
 const projects = [
   {

@@ -1,29 +1,71 @@
-import { motion } from 'framer-motion';
-import { useInView } from 'framer-motion';
-import { useRef, useState } from 'react';
-import { ExternalLink } from 'lucide-react';
+import { motion } from "framer-motion";
+import { useInView } from "framer-motion";
+import { useRef, useState } from "react";
+import { ExternalLink } from "lucide-react";
 
 const allProjects = [
-  { title: 'Forever Ecommerce Store', category: 'E-commerce', image: 'https://res.cloudinary.com/dvd7wbty8/image/upload/v1762633959/forever_iid7vo.png', link: 'https://foreverr-frontend.vercel.app/' },
-  { title: 'YourChildEducation', category: 'Web App', image: 'https://res.cloudinary.com/dvd7wbty8/image/upload/v1762633960/yourchildeducation_iuvg3m.png', link: 'https://foreverr-frontend.vercel.app/' },
-  { title: 'Innovative Tech', category: 'Landing Page', image: 'https://res.cloudinary.com/dvd7wbty8/image/upload/v1762633961/innovative-tech_kb2g9h.png', link: 'https://innovative-tech-two.vercel.app/' },
-  { title: 'Stayest', category: 'Web App', image: 'https://res.cloudinary.com/dvd7wbty8/image/upload/v1762633959/Staynest_ii4rpp.png', link: 'http://stayynest.netlify.app/' },
-  { title: 'EMW3', category: 'E-commerce', image: 'https://res.cloudinary.com/dvd7wbty8/image/upload/v1762633962/emw3_d5gmba.png', link: 'https://emw3-ng.myshopify.com/' },
-  { title: 'Cynoure', category: 'Landing Page', image: 'https://res.cloudinary.com/dvd7wbty8/image/upload/v1762633964/Cynosure_auvpwi.png', link: 'https://cyno-sure.netlify.app/' },
-  { title: 'Habeeb.Js', category: 'Landing Page', image: 'https://res.cloudinary.com/dvd7wbty8/image/upload/v1762713330/habeeb_j4gk5d.png', link: 'https://habeebjs.dev/' },
-
+  {
+    title: "Forever Ecommerce Store",
+    category: "E-commerce",
+    image:
+      "https://res.cloudinary.com/dvd7wbty8/image/upload/v1762633959/forever_iid7vo.png",
+    link: "https://foreverr-frontend.vercel.app/",
+  },
+  {
+    title: "YourChildEducation",
+    category: "Web App",
+    image:
+      "https://res.cloudinary.com/dvd7wbty8/image/upload/v1762633960/yourchildeducation_iuvg3m.png",
+    link: "https://foreverr-frontend.vercel.app/",
+  },
+  {
+    title: "Innovative Tech",
+    category: "Landing Page",
+    image:
+      "https://res.cloudinary.com/dvd7wbty8/image/upload/v1762633961/innovative-tech_kb2g9h.png",
+    link: "https://innovative-tech-two.vercel.app/",
+  },
+  {
+    title: "Stayest",
+    category: "Web App",
+    image:
+      "https://res.cloudinary.com/dvd7wbty8/image/upload/v1762633959/Staynest_ii4rpp.png",
+    link: "http://stayynest.netlify.app/",
+  },
+  {
+    title: "EMW3",
+    category: "E-commerce",
+    image:
+      "https://res.cloudinary.com/dvd7wbty8/image/upload/v1762633962/emw3_d5gmba.png",
+    link: "https://emw3-ng.myshopify.com/",
+  },
+  {
+    title: "Cynoure",
+    category: "Landing Page",
+    image:
+      "https://res.cloudinary.com/dvd7wbty8/image/upload/v1762633964/Cynosure_auvpwi.png",
+    link: "https://cyno-sure.netlify.app/",
+  },
+  {
+    title: "Habeeb.Js",
+    category: "Landing Page",
+    image:
+      "https://res.cloudinary.com/dvd7wbty8/image/upload/v1762713330/habeeb_j4gk5d.png",
+    link: "https://habeebjs.dev/",
+  },
 ];
 
-const categories = ['All', 'Landing Page', 'Web App', 'E-commerce'];
+const categories = ["All", "Landing Page", "Web App", "E-commerce"];
 
 export const AllProjects = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
-  const [activeCategory, setActiveCategory] = useState('All');
+  const [activeCategory, setActiveCategory] = useState("All");
 
-  const filteredProjects = activeCategory === 'All' 
-    ? allProjects 
-    : allProjects.filter(p => p.category === activeCategory);
+  const filteredProjects =
+    activeCategory === "All"
+      ? allProjects
+      : allProjects.filter((p) => p.category === activeCategory);
 
   return (
     <section className="bg-white py-24">
@@ -32,7 +74,7 @@ export const AllProjects = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           className="mb-4 font-serif text-black text-3xl md:text-5xl md:text-center text-start"
-          style={{ fontFamily: 'Playfair Display, serif' }}
+          style={{ fontFamily: "Playfair Display, serif" }}
         >
           All Projects
         </motion.h2>
@@ -44,14 +86,14 @@ export const AllProjects = () => {
         ></motion.div>
 
         <div className="flex flex-wrap justify-center gap-4 mb-12">
-          {categories.map(cat => (
+          {categories.map((cat) => (
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}
               className={`px-3.5 md:px-6 py-2 text-xs md:text-base rounded-full font-semibold transition-all ${
-                activeCategory === cat 
-                  ? 'bg-[#D4AF37] text-white' 
-                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                activeCategory === cat
+                  ? "bg-[#D4AF37] text-white"
+                  : "bg-gray-100 text-gray-700 hover:bg-gray-200"
               }`}
             >
               {cat}
@@ -59,7 +101,7 @@ export const AllProjects = () => {
           ))}
         </div>
 
-        <motion.div 
+        <motion.div
           ref={ref}
           layout
           className="gap-6 grid md:grid-cols-2 lg:grid-cols-3"
@@ -75,12 +117,21 @@ export const AllProjects = () => {
               whileHover={{ y: -10 }}
               className="group relative shadow-lg rounded-xl overflow-hidden cursor-pointer"
             >
-              <img src={project.image} alt={project.title} className="w-full h-full md:h-64 object-cover group-hover:scale-110 transition-transform duration-500" />
-              
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-full md:h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+
               <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 p-6 transition-opacity">
-                <h3 className="mb-2 font-bold text-white text-lg md:text-2xl">{project.title}</h3>
+                <h3 className="mb-2 font-bold text-white text-lg md:text-2xl">
+                  {project.title}
+                </h3>
                 <p className="mb-4 text-[#D4AF37]">{project.category}</p>
-                <a href={project.link} className="flex items-center gap-2 text-white hover:text-[#D4AF37] text-xs md:text-sm transition-colors">
+                <a
+                  href={project.link}
+                  className="flex items-center gap-2 text-white hover:text-[#D4AF37] text-xs md:text-sm transition-colors"
+                >
                   <ExternalLink size={20} />
                   <span>View Project</span>
                 </a>
@@ -92,4 +143,3 @@ export const AllProjects = () => {
     </section>
   );
 };
-
