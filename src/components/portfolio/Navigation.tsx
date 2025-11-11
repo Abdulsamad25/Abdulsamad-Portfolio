@@ -50,7 +50,7 @@ export const Navigation = () => {
           ))}
           
           <a
-            href="/resume.pdf"
+            href="/Abdulsamad Resume.docx.pdf"
             download
             className="flex items-center gap-2 bg-[#D4AF37] hover:bg-[#F4E5C2] px-6 py-2 rounded-lg font-semibold text-black transition-all"
           >
