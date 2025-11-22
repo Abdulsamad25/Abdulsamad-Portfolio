@@ -68,7 +68,7 @@ export const Contact = () => {
                 </div>
               </a>
 
-              <a href="https://wa.me/234094472087" className="group flex items-center gap-4 bg-gray-50 hover:bg-[#D4AF37] p-4 rounded-lg hover:text-white transition-all">
+              <a href="https://wa.me/2349094472087" className="group flex items-center gap-4 bg-gray-50 hover:bg-[#D4AF37] p-4 rounded-lg hover:text-white transition-all">
                 <Coffee className="text-[#D4AF37] group-hover:text-white" size={24} />
                 <div>
                   <p className="font-semibold">Book a Coffee Chat</p>
