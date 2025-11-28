@@ -10,6 +10,7 @@ import { AllProjects } from './portfolio/AllProjects';
 import { Testimonials } from './portfolio/Testimonials';
 import { Contact } from './portfolio/Contact';
 import { Footer } from './portfolio/Footer';
+import { Analytics } from "@vercel/analytics/next"
 
 const AppLayout: React.FC = () => {
   const [loading, setLoading] = useState(true);
@@ -38,6 +39,7 @@ const AppLayout: React.FC = () => {
       <Testimonials />
       <Contact />
       <Footer />
+      <Analytics />   
     </div>
   );
 };
