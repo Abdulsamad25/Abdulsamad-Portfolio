@@ -16,7 +16,7 @@ const allProjects = [
     category: "Web App",
     image:
       "https://res.cloudinary.com/dvd7wbty8/image/upload/v1762633960/yourchildeducation_iuvg3m.png",
-    link: "https://foreverr-frontend.vercel.app/",
+    link: "https://yourchildeducation.com/",
   },
   {
     title: "Innovative Tech",
