@@ -73,7 +73,7 @@ export const Hero = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-[#F4E5C2] to-[#D4AF37] opacity-0 group-hover:opacity-100 transition-opacity"></div>
           </button>
           
-          <a href="/Abdulsamad Resume.docx.pdf" download className="group flex items-center gap-2 hover:bg-[#D4AF37] px-8 py-4 border-[#D4AF37] border-2 rounded-lg font-semibold text-[#D4AF37] hover:text-black transition-all">
+          <a href="/Abdulsamad Resume.pdf" download className="group flex items-center gap-2 hover:bg-[#D4AF37] px-8 py-4 border-[#D4AF37] border-2 rounded-lg font-semibold text-[#D4AF37] hover:text-black transition-all">
             <Download size={20} />
             Download Resume
           </a>

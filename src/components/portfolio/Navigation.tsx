@@ -50,7 +50,7 @@ export const Navigation = () => {
           ))}
           
           <a
-            href="/Abdulsamad Resume.docx.pdf"
+            href="/Abdulsamad Resume.pdf"
             download
             className="flex items-center gap-2 bg-[#D4AF37] hover:bg-[#F4E5C2] px-6 py-2 rounded-lg font-semibold text-black transition-all"
           >
@@ -86,7 +86,7 @@ export const Navigation = () => {
               </a>
             ))}
             <a
-              href="/resume.pdf"
+              href="/Abdulsamad Resume.pdf"
               download
               className="block bg-[#D4AF37] hover:bg-[#F4E5C2] px-6 py-3 rounded-lg font-semibold text-black text-center transition-all"
             >
