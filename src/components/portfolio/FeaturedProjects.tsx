@@ -5,15 +5,15 @@ import { ExternalLink, Github, X } from 'lucide-react';
 
 const projects = [
   {
-    title: 'Forever E-Commerce Store',
-    description: 'A full-stack e-commerce application with payment integration using Stripe and Paystack. It includes features like product browsing, cart management, user authentication, and order tracking.',
-    image: 'https://res.cloudinary.com/dvd7wbty8/image/upload/v1762633959/forever_iid7vo.png',
-    tech: ['React', 'Tailwind CSS', 'Node.js', 'MongoDB Atlas', 'Stripe', 'Paystack', 'Vercel'],
+    title: 'Abasi Store',
+    description: 'A full-stack e-commerce application with payment integration using Paystack. It includes features like product browsing, cart management, user authentication, and order tracking.',
+    image: 'https://res.cloudinary.com/dvd7wbty8/image/upload/v1766133496/abasiHome_if0crx.png',
+    tech: ['React', 'Tailwind CSS', 'Express', 'Node.js', 'MongoDB Atlas', 'Paystack', 'Vercel'],
     metrics: { users: '10K+', sales: '5K+', uptime: '99.9%' },
     challenge: 'Integration of Payment Gateways and Secure Transactions',
-    solution: 'Implemented Stripe and Paystack APIs with robust error handling and user feedback mechanisms to ensure smooth and secure payment processing.',
+    solution: 'Implemented Paystack APIs with robust error handling and user feedback mechanisms to ensure smooth and secure payment processing.',
     github: 'https://github.com/Abdulsamad25/E-commerce-app',
-    live: 'https://foreverr-frontend.vercel.app/'
+    live: 'https://www.shopabasi.com/'
   },
   {
     title: 'YourChildEducation',

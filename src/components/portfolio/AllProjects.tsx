@@ -5,11 +5,11 @@ import { ExternalLink } from "lucide-react";
 
 const allProjects = [
   {
-    title: "Forever Ecommerce Store",
+    title: "Abasi Store",
     category: "E-commerce",
     image:
-      "https://res.cloudinary.com/dvd7wbty8/image/upload/v1762633959/forever_iid7vo.png",
-    link: "https://foreverr-frontend.vercel.app/",
+      "https://res.cloudinary.com/dvd7wbty8/image/upload/v1766133496/abasiHome_if0crx.png",
+    link: "https://www.shopabasi.com/",
   },
   {
     title: "YourChildEducation",
