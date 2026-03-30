@@ -36,8 +36,8 @@ const allProjects = [
     title: "EMW3",
     category: "E-commerce",
     image:
-      "https://res.cloudinary.com/dvd7wbty8/image/upload/v1762633962/emw3_d5gmba.png",
-    link: "https://emw3-ng.myshopify.com/",
+      "https://res.cloudinary.com/dvd7wbty8/image/upload/v1774880540/emw-landing-page_jkgrts.png",
+    link: "https://www.emw3.com.ng/",
   },
   {
     title: "Cynoure",

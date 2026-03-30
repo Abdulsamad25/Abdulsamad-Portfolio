@@ -9,10 +9,10 @@ const projects = [
     description: 'A full-stack e-commerce application with payment integration using Paystack. It includes features like product browsing, cart management, user authentication, and order tracking.',
     image: 'https://res.cloudinary.com/dvd7wbty8/image/upload/v1766133496/abasiHome_if0crx.png',
     tech: ['React', 'Tailwind CSS', 'Express', 'Node.js', 'MongoDB Atlas', 'Paystack', 'Vercel'],
-    metrics: { users: '10K+', sales: '5K+', uptime: '99.9%' },
+    metrics: { users: '10+', sales: '5+', uptime: '99.9%' },
     challenge: 'Integration of Payment Gateways and Secure Transactions',
     solution: 'Implemented Paystack APIs with robust error handling and user feedback mechanisms to ensure smooth and secure payment processing.',
-    github: 'https://github.com/Abdulsamad25/E-commerce-app',
+    github: '#',
     live: 'https://www.shopabasi.com/'
   },
   {
@@ -25,6 +25,17 @@ const projects = [
     solution: 'Worked closely with the backend developer to ensure smooth API integration and data flow',
     github: '#',
     live: 'https://www.yourchildeducation.com/'
+  },
+  {
+    title: 'EMW3',
+    description: 'A full-stack e-commerce application built with React, Tailwind CSS, and Node.js. It features a user-friendly interface, secure payment integration, and robust backend functionality to provide a seamless shopping experience.',
+    image: 'https://res.cloudinary.com/dvd7wbty8/image/upload/v1774880540/emw-landing-page_jkgrts.png',
+    tech: ['React', 'Tailwind CSS', 'Express', 'Node.js', 'MongoDB Atlas', 'Paystack', 'Vercel'],
+    metrics: { users: '10+', sales: '20+', uptime: '99.9%' },
+    challenge: 'Building a scalable and secure e-commerce platform',
+    solution: 'Implemented best practices for security and scalability in both frontend and backend development',
+    github: '#',
+    live: 'https://www.emw3.com.ng/'
   },
   {
     title: 'Innovative Tech',
@@ -47,7 +58,8 @@ const projects = [
     solution: 'Used Paystack API for secure payments and real-time data fetching for availability',
     github: 'https://github.com/Abdulsamad25/apartment-rentals/',
     live: 'http://stayynest.netlify.app/'
-  }
+  },
+  
 ];
 
 export const FeaturedProjects = () => {
