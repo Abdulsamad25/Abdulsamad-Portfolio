@@ -19,20 +19,6 @@ const allProjects = [
     link: "https://yourchildeducation.com/",
   },
   {
-    title: "Innovative Tech",
-    category: "Landing Page",
-    image:
-      "https://res.cloudinary.com/dvd7wbty8/image/upload/v1762633961/innovative-tech_kb2g9h.png",
-    link: "https://innovative-tech-two.vercel.app/",
-  },
-  {
-    title: "Stayest",
-    category: "Web App",
-    image:
-      "https://res.cloudinary.com/dvd7wbty8/image/upload/v1762633959/Staynest_ii4rpp.png",
-    link: "http://stayynest.netlify.app/",
-  },
-  {
     title: "EMW3",
     category: "E-commerce",
     image:
@@ -52,6 +38,20 @@ const allProjects = [
     image:
       "https://res.cloudinary.com/dvd7wbty8/image/upload/v1762713330/habeeb_j4gk5d.png",
     link: "https://habeebjs.dev/",
+  },
+  {
+    title: "Innovative Tech",
+    category: "Landing Page",
+    image:
+      "https://res.cloudinary.com/dvd7wbty8/image/upload/v1762633961/innovative-tech_kb2g9h.png",
+    link: "https://innovative-tech-two.vercel.app/",
+  },
+  {
+    title: "Stayest",
+    category: "Web App",
+    image:
+      "https://res.cloudinary.com/dvd7wbty8/image/upload/v1762633959/Staynest_ii4rpp.png",
+    link: "http://stayynest.netlify.app/",
   },
 ];
 
